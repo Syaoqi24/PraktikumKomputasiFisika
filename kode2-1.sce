@@ -1,0 +1,6 @@
+A=input("silahkan berikan nilai x:")
+disp("nilai x adalah")
+disp(A)
+B=input("silahkan berikan isi x :","string")
+disp("isi x adalah ")
+disp(B)
