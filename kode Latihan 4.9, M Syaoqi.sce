@@ -1,0 +1,12 @@
+A=[1,2,3,4,5,6;4,5,6,7,8,9;7,8,9,0,1,2]
+jbaris=size(A,1)
+jkolom=size(A,2)
+junsur=size(A,"*")
+disp("Matriks A =")
+disp(A)
+disp("Jumlah baris =")
+disp(jbaris)
+disp("Jumlah kolom =")
+disp(jkolom)
+disp("Jumlah unsur =")
+disp(junsur)

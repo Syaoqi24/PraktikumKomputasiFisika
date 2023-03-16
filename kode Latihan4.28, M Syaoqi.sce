@@ -1,0 +1,21 @@
+A-[1,2,3;7,8,9;4,5,6];
+[U,T]=schur(A)
+B=U*T*U';
+C=U*U';
+D=spec(A);
+E=spec(T);
+disp("A = ");
+disp(A);
+disp("[U,T] = schur(A)");
+disp("U = ");
+disp(U);
+disp("T = ");
+disp(T);
+disp("B = U*T*U = ");
+disp(B);
+disp("C = U*U = ");
+disp(C);
+disp("D = spec(A) = ");
+disp(D);
+disp("E = spec(T) = ");
+disp(E);

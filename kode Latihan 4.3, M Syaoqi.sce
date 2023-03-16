@@ -1,0 +1,12 @@
+A=rand();
+B=rand(2,3,"uniform");
+C=grand(2,3,"uin",1,255);
+D=grand(7,"prm",[1,2,3,4,5]);
+disp("rand() =");
+disp(A);
+disp("rand(2,3,""uniform"") =");
+disp(B);
+disp("grand(2,3,""uin"",1,255) =");
+disp(C);
+disp("grand(7,""prm"",[1,2,3,4,5]) =");
+disp(D);

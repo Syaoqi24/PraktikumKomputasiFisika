@@ -1,0 +1,9 @@
+A=[5,5,5,5;1,2,3,4]
+B=[1,2;1,2;1,2;1,2]
+C=A*B
+disp("A=")
+disp(A)
+disp("B=")
+disp(B)
+disp("C=A*B")
+disp(C)
