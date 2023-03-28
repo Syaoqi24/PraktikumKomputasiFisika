@@ -19,3 +19,25 @@ A=[9,3,2,4,5,2,1,0,7,6,9];
 B=gsort(A, "lc", "i" );
 disp(A);
 disp(B);
+
+
+//untuk yang non perulangan
+
+
+
+//ini untuk yang memakai perulangan 
+A= [9,3,2,4,5,2,1,0,7,6,9];
+
+n=length(A)
+
+for i= 1:n-1 do
+    for j= 1:n-i do
+        if A(j)> A(j+1) then
+            temp = A(j);
+            A(j) = A(j+1);
+            A(j+1) = temp;
+        end
+    end
+end
+disp("Matriks yang sudah diurutkan");
+disp(A)
