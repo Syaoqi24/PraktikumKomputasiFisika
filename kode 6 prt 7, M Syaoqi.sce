@@ -1,0 +1,10 @@
+t=-%pi:0.3:%pi
+clf()
+scf()
+plot2d(t,sin(t))
+sleep(7000)
+close
+scf()
+plot2d(t,t)
+sleep(7000)
+close
