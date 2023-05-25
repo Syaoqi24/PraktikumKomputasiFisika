@@ -29,7 +29,8 @@ function hasil = romawi_ke_arab(input)
             input = strsubst(input, '', 1:length(romawi(i)));
     end
     
-   
+    hasil = result;
+endfunction
    
    
    //while i <= length(input)
@@ -43,25 +44,52 @@ function hasil = romawi_ke_arab(input)
             //i = i + 2;
         //end
     //end
-    
-    hasil = result;
-endfunction
+  
 
 
 // Main program
 
-disp("1. Konversi Angka Arab ke Romawi");
-disp("2. Konversi Angka Romawi ke Arab");
-pilihan = input("Masukkan pilihan (1 atau 2): ");
+//disp("1. Konversi Angka Arab ke Romawi");
+//disp("2. Konversi Angka Romawi ke Arab");
+//pilihan = input("Masukkan pilihan (1 atau 2): ");
 
-if pilihan == 1 then
-    angka_arab = input("Masukkan angka Arab: ");
-    hasil = arab_ke_romawi(angka_arab);
-    disp(["Hasil konversi: ", hasil]);
-elseif pilihan == 2 then
-    angka_romawi = input("Masukkan angka Romawi: ", "s");     
-    hasil = romawi_ke_arab(angka_romawi);
-    disp(["Hasil konversi: ", string(hasil)]);       //masih terdapat kesalahan di bagian ini
-else
-    disp("Pilihan tidak valid!");
+//if pilihan == 1 then
+//    angka_arab = input("Masukkan angka Arab: ");
+//    hasil = arab_ke_romawi(angka_arab);
+ //   disp(["Hasil konversi: ", hasil]);
+//elseif pilihan == 2 then
+//    angka_romawi = input("Masukkan angka Romawi: ", "s");     
+//    hasil = romawi_ke_arab(angka_romawi);
+//    disp(["Hasil konversi: ", string(hasil)]);       //masih terdapat kesalahan di bagian ini
+//else
+//    disp("Pilihan tidak valid!");
+//end
+
+
+//update kode pert 14 
+while Y== 'y'
+
+  disp("Silahkan untuk memilih : ");
+  disp("1. Mengkonversi bilangan arab ke romawi. ");
+  disp("2. Mengkonversi bilangan romawi ke arab. ");
+
+  
+M=input("Opsi apa yang ingin Anda pilih?   ", 's');
+
+switch M
+    case '1'
+        disp("Anda memilih opsi 1")
+        angkaarab = input("Silahkan masukkan angka arab yang ingin dikonversikan : ");
+        hasil = arab_ke_romawi(angkaarab);
+        disp(["Hasil konversi : ", hasil]);
+
+    case '2'
+        disp("Anda memilih opsi 2")
+        angkaromawi = input("Silahkan masukkan angka romawi yang ingin dikonersikan : ", "s");
+        hasil = romawi_ke_arab(angkaarab);
+        disp(["Hasil konversi : ", "s", string(hasil)]);
+        
+    otherwise 
+        disp("Pilihan tersebut tidak valid");
 end
+
